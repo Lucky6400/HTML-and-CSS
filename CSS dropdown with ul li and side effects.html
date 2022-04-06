@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu{
+            width: 1170px;
+            margin: auto;
+            background-color: royalblue;
+        }
+        .menu>ul{
+            display: flex;
+        }
+        .menu>ul>li{
+            padding: 12px 25px;
+            list-style: none;
+            border-right: 2px rgb(12, 11, 11) solid;
+            color: aliceblue;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            position: relative;
+        }
+        .submenu{
+            position: absolute;
+            background-color: chocolate;
+            list-style: none;
+            left: -100%;
+            top: 100%;
+            opacity: 0%;
+            visibility: hidden;
+            transition: 0.5s;
+        }
+        .menu>ul>li:hover .submenu{
+            opacity: 1;
+            visibility:visible;
+            left: 0px;
+        }
+        .submenu>li{
+            padding: 12px;
+            border: 2px rgb(64, 67, 240) solid;
+            list-style: none;
+            position: relative;
+        }
+        .submenuin{
+            position: absolute;
+            list-style: none;
+            width: 130px;
+            background-color: green;
+            left: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: 1s;
+            top: 100%;
+        }
+        .submenu>li:hover .submenuin{
+            opacity: 1;
+            visibility: visible;
+            top: 0px;
+        }
+        .submenuin li{
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <ul>
+            <li>Home</li>
+            <li>Courses
+                <ul class="submenu">
+                    <li>PHP
+                        <ul class="submenuin">
+                            <li>PHP01</li>
+                            <li>PHP02</li>
+                        </ul>
+                    </li>
+                    <li>MySQL</li>
+                    <li>React JS</li>
+                    <li>Angular JS</li>
+                    <li>Javascript</li>
+                </ul>
+            </li>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Careers</li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+</body>
+</html>

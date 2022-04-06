@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+	@-webkit-keyframes colorchange{
+	0%{
+		background: red;
+		transform: translate(0px,0px);
+	}
+	25%{
+		background: rgb(231, 28, 164);
+		transform: translate(300px,0px);
+	}
+	50%{
+		background: green;
+		transform: translate(300px,300px);
+	}
+	75%{
+		background: orange;
+		transform: translate(0px,300px);
+	}
+	100%{
+		background: rgb(48, 241, 14);
+		transform: translate(0px,0px);
+	}
+	}
+	.main{
+		width: 500px;
+		height: 500px;
+		background: royalblue;
+		animation-name: colorchange;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+</style>
+</head>
+<body>
+	<div class="main"></div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<style type="text/css">
+@-webkit-keyframes part1{
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes part2{
+    from{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+    }
+}
+	.main{
+        width: 300px;
+        height: 300px;
+        border: 5px solid royalblue;
+        position: relative;
+    }
+    .img01{
+        border-radius: 50%;
+        animation: part1 2s 0s infinite linear; /*"linear" will help rotate the image continuously without any interruption.*/
+    }
+    .img02{
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        animation: part2 2s 0s infinite linear;
+    }
+    .img03{
+        border-radius: 50%;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        animation: part1 2s 0s infinite linear;
+    }
+</style>
+</head>
+<body>
+	<div class="main">
+        <img src="images/Koala.jpg" width="300px" height="300px" class="img01" alt="">
+        <img src="images/Penguins.jpg"  alt="" width="200px" height="200px" class="img02">
+        <img src="images/Tulips.jpg" width="100px" height="100px" class="img03" alt="">
+    </div>
+</body>
+</html>

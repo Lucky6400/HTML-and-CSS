@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @-webkit-keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes rotate1{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+        @-webkit-keyframes rotate2{
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotateY(360deg);
+            }
+        }
+        .main{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: rotate 1s 0s infinite linear;
+        }
+        .main1{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: rotate1 1s 0s infinite linear;
+        }
+        .main2{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            animation: rotate2 1s 0s infinite linear;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/Desert.jpg" alt="" class="main">
+    <img src="images/Hydrangeas.jpg" alt="" class="main1">
+    <img src="images/Jellyfish.jpg" alt="" class="main2">
+</body>
+</html>

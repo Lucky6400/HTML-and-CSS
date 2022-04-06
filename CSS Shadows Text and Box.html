@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-shadow: 30px /*h-shadow*/ 20px /*v-shadow*/ 5px /*Blur*/ gray /*Shadow colour */;
+            -webkit-text-shadow: 30px 20px 5px gray; /* Browser extension is used when this property doesn't work.*/
+            /*Negative values are accepted in shadow. We can give multiple shadows.*/
+            font-size: 400%;
+
+        }
+        .main01{
+            width: 200px;
+            height: 300px;
+            background-color: aqua;
+            box-shadow:inset/*inset = shadow is inside*/ 30px 30px 5px 10px/*Spread to increase shadow size.*/ royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">Hello pals.</div>
+    <div class="main01"></div>
+</body>
+</html>

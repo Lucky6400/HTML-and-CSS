@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 1px solid royalblue;
+        }
+        .main1{
+            border: 1px solid royalblue;
+            display: block; /*This will fill entire width and cover full row */
+        }
+        .main2{
+            border: 1px solid royalblue;
+            display: inline-block; /* This will only cover width according to the content (from right side) */
+             display: table; /* Width acc to content from both sides */
+        }
+    </style>
+</head>
+<body>
+    <div class="main2">
+        <ul>
+            <li>PHP</li>
+            <li>Java</li>
+        </ul>
+    </div>
+    <div class="main">Welcome</div>
+    <b class="main1">Welcome</b>
+</body>
+</html>

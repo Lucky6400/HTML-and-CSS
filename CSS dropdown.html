@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px; /* The "*" targets all the tags used in an HTML file. */
+        }
+        .menu{
+            width:auto;
+            margin: auto;
+            list-style: none;
+            background-color: royalblue;
+            position: relative;
+            display: inline-block;
+        }
+        .li01{
+            display: inline-block;
+            padding: 12px 25px;
+            border-right: 2px white solid;
+            color: aliceblue;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .ul01{
+            display: none;
+            list-style: none;
+            position: absolute;
+            background-color: rgb(225, 65, 65);
+            left: 0px;
+            top: 100%;
+            right: auto;
+            padding: 8px;
+        }
+        #Racing:hover .ul01{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="menu">
+        <ul>
+            <li class="li01" id="Racing">Racing
+                <ul class="ul01">
+                    <li class="li02">Car Racing</li>
+                    <li class="li02">Moto Racing</li>
+                </ul>
+            </li>
+            <li class="li01">Shooters</li>
+            <li class="li01">Fighting</li>
+            <li class="li01">Simulation</li>
+            <li class="li01">Puzzles</li>
+            <li class="li01">Sports</li>
+            <li class="li01">Strategy</li>
+        </ul>
+    </div>
+    </center>
+</body>
+</html>

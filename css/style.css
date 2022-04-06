@@ -1,0 +1,15 @@
+.class01{
+	border: 1px red solid;
+	height: 200px;
+	width: 200px;
+	background-color: royalblue;
+	border-radius: 20px 20px 20px 20px;
+	border-top-width: 100px;
+	border-bottom-width: 50px;
+	border-right-width: 30px;
+	border-left-width: 50px;
+	font-family: cursive;
+	text-align: center;
+	color: white;
+	font-size: 300%;
+}
